@@ -1,54 +1,91 @@
-# Astro Starter Kit: Basics
+# Algoritmos de Cubo de Rubik
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al proyecto **Algoritmos de Cubo de Rubik**. Este sitio web proporciona una colección completa de algoritmos y técnicas para resolver cubos de Rubik, desde principiantes hasta expertos. Aquí encontrarás guías detalladas, ilustraciones y herramientas interactivas para mejorar tus habilidades en la resolución de cubos.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Tabla de Contenidos
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Descripción](#descripción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Descripción
 
-## 🚀 Project Structure
+**Algoritmos de Cubo de Rubik** es una plataforma en línea diseñada para ayudar a los entusiastas del cubo de Rubik a aprender y perfeccionar sus habilidades en la resolución de cubos. El sitio ofrece:
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Guías detalladas** para cada algoritmo.
+- **Ilustraciones** y diagramas para una mejor comprensión.
+- **Herramientas interactivas** para practicar algoritmos.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Características
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **Interfaz amigable**: Diseñada para facilitar la navegación y el aprendizaje.
+- **Colección extensa**: Incluye algoritmos para resolver el cubo de Rubik en diferentes niveles de dificultad.
+- **Responsivo**: Optimizado para dispositivos móviles y de escritorio.
+- **Actualizaciones regulares**: Nuevos algoritmos y técnicas añadidos periódicamente.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Instalación
 
-Any static assets, like images, can be placed in the `public/` directory.
+Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
 
-## 🧞 Commands
+1. **Clona el repositorio**:
+    ```bash
+    git clone https://github.com/tu_usuario/algoritmos-cubo-rubik.git
+    cd algoritmos-cubo-rubik
+    ```
 
-All commands are run from the root of the project, from a terminal:
+2. **Instala las dependencias**:
+    Asegúrate de tener [Node.js](https://nodejs.org/) y [pnpm](https://pnpm.io/) instalados.
+    ```bash
+    pnpm install
+    ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+3. **Ejecuta el servidor de desarrollo**:
+    ```bash
+    pnpm dev
+    ```
 
-## 👀 Want to learn more?
+    Visita `http://localhost:3000` en tu navegador para ver el sitio web en acción.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Uso
+
+Para agregar o actualizar algoritmos, sigue estos pasos:
+
+1. **Añadir nuevos algoritmos**: Modifica los archivos en `src/pages/algoritmos` para agregar o actualizar algoritmos.
+2. **Actualizar la documentación**: Edita `src/pages/documentacion` para mantener la guía actualizada.
+3. **Ejecutar pruebas**: Asegúrate de que todos los cambios funcionen correctamente ejecutando:
+    ```bash
+    pnpm test
+    ```
+
+## Contribución
+
+Las contribuciones son bienvenidas. Si quieres contribuir al proyecto, sigue estos pasos:
+
+1. **Haz un fork del repositorio**.
+2. **Crea una rama para tu funcionalidad**:
+    ```bash
+    git checkout -b feature/nueva-funcionalidad
+    ```
+3. **Realiza tus cambios** y realiza un commit:
+    ```bash
+    git commit -m "Añadida nueva funcionalidad"
+    ```
+4. **Sube tus cambios** y crea un pull request:
+    ```bash
+    git push origin feature/nueva-funcionalidad
+    ```
+
+### Código de Conducta
+
+Por favor, sigue el [Código de Conducta](./CODE_OF_CONDUCT.md) del proyecto para asegurar un ambiente de colaboración respetuoso.
+
+## Licencia
+
+Este proyecto está licenciado bajo la [MIT License](./LICENSE).
+
+---
+
+¡Gracias por visitar el proyecto **Algoritmos de Cubo de Rubik**! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o enviar un correo a `contacto@tusitio.com`.
