@@ -3,8 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
+<Layout title="Welcome to myAlgs.">
 		<svg
 			class="astro-a"
 			width="495"
@@ -33,26 +32,25 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1 class="text-7xl font-bold leading-none text-center mb-4">Welcome to <span class="text-gradient">myAlgs</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			This is the page where I compile and share all algorithms I use in speedcubing.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="/oll"
+				title="OLL"
+				body="Orientation of the last layer."
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="/pll"
+				title="PLL"
+				body="Permutation of the last layer."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="/cll"
+				title="CLL"
+				body="Corners of the last layer (2x2)"
 			/>
 			<Card
 				href="https://astro.build/chat/"
@@ -60,19 +58,9 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
 	.astro-a {
 		position: absolute;
 		top: -32px;
@@ -81,13 +69,6 @@ import Card from '../components/Card.astro';
 		width: 220px;
 		height: auto;
 		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);

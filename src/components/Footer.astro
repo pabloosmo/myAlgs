@@ -1,0 +1,21 @@
+---
+import Social from './Social.astro';
+import twitterLogo from '../img/twitter_logo.png';
+import instagramLogo from '../img/instagram_logo.png';
+import youtubeLogo from '../img/youtube_logo.png';
+import wcaLogo from '../img/wca_logo.png';
+import githubLogo from '../img/github_logo.png';
+import linkedinLogo from '../img/linkedin_logo.png';
+---
+<footer class="bg-gray-800 text-white py-4 fixed bottom-0 w-full">
+    <div class="container mx-auto flex flex-col items-center">
+        <ul class="flex space-x-4">
+            <Social platform="twitter.com" username="OsmoOficial" img={twitterLogo}/>
+            <Social platform="instagram.com" username="Osmofosis" img={instagramLogo}/>
+            <Social platform="youtube.com" username="pabloosmo" img={youtubeLogo}/>
+            <Social platform="worldcubeassociation.org" username="persons/2010MOND01" img={wcaLogo}/>
+            <Social platform="github.com" username="pabloosmo" img={githubLogo}/>
+            <Social platform="linkedin.com" username="in/pablo-oshiro" img={linkedinLogo}/>
+        </ul>
+    </div>
+</footer>

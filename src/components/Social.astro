@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+const { platform, username, img } = Astro.props;
+---
+<a href={`https://www.${platform}/${username}`} class="text-blue-600 hover:text-blue-400" title={platform}><Image src={img} alt="A bird." width="50" height="50" /></a>
+
+<style>
+    a {
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+    }
+</style>

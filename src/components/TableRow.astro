@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+   imgSrc: string;
+   imgDsc: string;
+   alg: string;
+   caseDsc: string;
+}
+
+const { imgSrc, imgDsc, alg, caseDsc } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/img/oll/*.{jpeg,jpg,png,gif}')
+if (!images[imgSrc]) throw new Error(`"${imgSrc}" does not exist in glob: "/src/img/oll/*.{jpeg,jpg,png,gif}"`);
+---
+<tr class="border-b border-gray-300">
+    <td class="py-3 px-6">
+        <div class="w-24 h-24 flex items-center justify-center">
+            <Image src={images[imgSrc]()} alt={imgDsc} />
+        </div>
+    </td>
+    <td class="py-3 px-6 whitespace-nowrap">{alg}</td>
+    <td class="py-3 px-6">{caseDsc}</td>
+</tr>

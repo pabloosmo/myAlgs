@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro"
+import TableRow from "../components/TableRow.astro";
+---
+
+<Layout title="OLL">
+    <h1 class="text-7xl font-bold leading-none text-center mb-4 text-white">OLL</h1>
+    <div class="overflow-x-auto">
+      <table class="max-w-3xl mx-auto w-full bg-white border border-gray-300">
+        <thead class="bg-gray-800 text-white">
+          <tr>
+            <th class="py-3 px-6 text-left">Case</th>
+            <th class="py-3 px-6 text-left whitespace-nowrap">Algorithm</th>
+            <th class="py-3 px-6 text-left">Explanation</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-800">
+          <TableRow imgSrc="/src/img/oll/43.png" imgDsc="Short T" alg="F (R U R' U') F'" caseDsc="This is the easiest case, it's only 6 moves, probably you already know it. F sexy F'"/>
+          <TableRow imgSrc="/src/img/oll/42.png" imgDsc="Short P" alg="F (U R U' R') F'" caseDsc="This is almost the same case as before, but the sexy is done on the other direction. Once you learn this, you should also learn it from the opposite angle with f."/>
+          <TableRow imgSrc="/src/img/oll/26.png" imgDsc="Sune" alg="R U R' U R U2 R'" caseDsc="This is a sune, this is another basic case. Probably you already know this one too."/>
+          <TableRow imgSrc="/src/img/oll/25.png" imgDsc="Anti-Sune" alg="R' U' R U' R' U2 R" caseDsc="This is the mirror of the previous case. The anti-sune."/>
+          <TableRow imgSrc="/src/img/oll/21.png" imgDsc="Double U" alg="(R U2 R' U' R) U (R' U' R U' R')" caseDsc="This is a double anti-sune, cancelling some moves."/>
+          <TableRow imgSrc="/src/img/oll/22.png" imgDsc="U" alg="R2 D' R U2 R' D R U2 R" caseDsc="This case is a little weird, but it is very important to know."/>
+          <TableRow imgSrc="/src/img/oll/23.png" imgDsc="Chameleon" alg="(r U R' U') (r' F R F')" caseDsc="This is kinda sexy + sledge, but with blocks."/>
+          <TableRow imgSrc="/src/img/oll/24.png" imgDsc="Peanut" alg="(F' r U R') (U' r' F R)" caseDsc="This is the inverse of the previous."/>
+          <TableRow imgSrc="/src/img/oll/56.png" imgDsc="Man" alg="R U2 R2' U' R2 U' R2' U2 R" caseDsc="This case is somehow difficult at the begining but very fast to execute."/>
+          <TableRow imgSrc="/src/img/oll/41.png" imgDsc="Short B" alg="F' (U' L' U L) F" caseDsc="Like the second case, but with the left hand."/>
+          <TableRow imgSrc="/src/img/oll/7.png" imgDsc="Short lightning" alg="r U R' U R U2 r'" caseDsc="This is like a sune, but the first and the last moves are block moves."/>
+          <TableRow imgSrc="/src/img/oll/8.png" imgDsc="Short lightning symmetric" alg="r' U' R U' R' U2 r" caseDsc="Just like a block anti-sune."/>
+          <TableRow imgSrc="/src/img/oll/5.png" imgDsc="Square" alg="r U2 R' U' R U' r'" caseDsc="This is the inverse of the block sune."/>
+          <TableRow imgSrc="/src/img/oll/6.png" imgDsc="Square symmetric" alg="r U2 R' U' R U' r'" caseDsc="And the inverse of the block anti-sune."/>
+          <TableRow imgSrc="/src/img/oll/32.png" imgDsc="Long T" alg="(R U R' U') (R' F R F')" caseDsc="This is the long T. Sexy + Sledge."/>
+          <TableRow imgSrc="/src/img/oll/36.png" imgDsc="Good kite" alg="F (R U' R' U') (R U R') F'" caseDsc="This can be the inverse of the previous but this algorithm is faster since you don't need to regrip."/>
+          <TableRow imgSrc="/src/img/oll/49.png" imgDsc="I" alg="f (R U R' U') (R U R' U') f'" caseDsc="This is a double block short T. f double sexy f'"/>
+          <TableRow imgSrc="/src/img/oll/57.png" imgDsc="Good awkward" alg="(R U R' U R U2 R') F (R U R' U') F'" caseDsc="This is a Sune + short T"/>
+          <TableRow imgSrc="/src/img/oll/40.png" imgDsc="Good awkward symmetric" alg="(R' U' R U' R' U2 R) F (R U R' U') F'" caseDsc="Anti-sune + short T"/>
+          <TableRow imgSrc="/src/img/oll/2.png" imgDsc="Good dot" alg="F (R U R' U') S (R U R' U') f'" caseDsc="Fat short T plus regular T."/>
+          <TableRow imgSrc="/src/img/oll/3.png" imgDsc="Two dots" alg="f (R U R' U' f') U' F (R U R' U' F')" caseDsc="Fat short T, adjust and short T"/>
+          <TableRow imgSrc="/src/img/oll/4.png" imgDsc="Two dots symmetric" alg="f (R U R' U') f' U F (R U R' U') F'" caseDsc="Same as previous."/>
+          <TableRow imgSrc="/src/img/oll/18.png" imgDsc="Mickey Mouse" alg="(r U R' U R U2) r2 (U' R U' R' U2 r)" caseDsc="Fat sune + fat anti-sune"/>
+          <TableRow imgSrc="/src/img/oll/46.png" imgDsc="Small L 1" alg="F (R U R' U') (R U R' U') F'" caseDsc="F + double sexy + F'"/>
+          <TableRow imgSrc="/src/img/oll/45.png" imgDsc="Small L 1 symmetric" alg="R' U' Lw' (U R U' R') (U R U') U R" caseDsc="This is usually a F + double sexy + F' but in order to avoid doing it with the left, we do a setup."/>
+          <TableRow imgSrc="/src/img/oll/52.png" imgDsc="Small L 2" alg="r U (R' U R U') (R' U R U2) r'" caseDsc="Double fat sune."/>
+          <TableRow imgSrc="/src/img/oll/51.png" imgDsc="Small L 2 symmetric" alg="r' U' (R U' R' U) (R U' R' U2) r" caseDsc="Double fat anti-sune."/>
+          <TableRow imgSrc="/src/img/oll/47.png" imgDsc="Small L 3" alg="r U' r2' U r2 U r2' U' r" caseDsc="Very fast case."/>
+          <TableRow imgSrc="/src/img/oll/48.png" imgDsc="Small L 3 symmetric" alg="r' U r2 U' r2' U' r2 U r'" caseDsc="Inverse of the last one."/>
+          <TableRow imgSrc="/src/img/oll/9.png" imgDsc="Y" alg="(R U R' U') (R' F R2) U R' U' F'" caseDsc="This is almost a T perm"/>
+          <TableRow imgSrc="/src/img/oll/10.png" imgDsc="Y symmetric" alg="(R U R' U) (R' F R F') R U2 R'" caseDsc="This case is easier to learn if you focus on the F2L pair FR."/>
+          <TableRow imgSrc="/src/img/oll/11.png" imgDsc="Long lightning" alg="(r U R' U) (R' F R F') R U2 r'" caseDsc="This is the bad lightning."/>
+          <TableRow imgSrc="/src/img/oll/12.png" imgDsc="Long lightning symmetric" alg="M' (R' U' R U' R' U2 R) U' M" caseDsc="The symmetric of the bad lightning, same algorithm."/>
+          <TableRow imgSrc="/src/img/oll/13.png" imgDsc="Big L 1" alg="F U R U' R2' F' R (U R U' R')" caseDsc="Next we have the L cases which is a nice set to learn and really fast to execute."/>
+          <TableRow imgSrc="/src/img/oll/14.png" imgDsc="Big L 1 symmetric" alg="(R' F R U) (R' F' R) (F U' F')" caseDsc="Inverse of the last one."/>
+          <TableRow imgSrc="/src/img/oll/15.png" imgDsc="Big L 2" alg="(r' U' r) (R' U' R U) (r' U r)" caseDsc="Inverse of the last one."/>
+          <TableRow imgSrc="/src/img/oll/16.png" imgDsc="Big L 2 symmetric" alg="(r U r') (R U R' U') (r U' r')" caseDsc="Inverse of the last one."/>
+          <TableRow imgSrc="/src/img/oll/54.png" imgDsc="I 2" alg="r' U' r (U' R' U R) (U' R' U R) r' U r" caseDsc="Setup plus double sexy."/>
+          <TableRow imgSrc="/src/img/oll/50.png" imgDsc="I 3" alg="(R U R' U) R U' (B U' B') R'" caseDsc="Since we're already here, let's finish the I cases."/>
+          <TableRow imgSrc="/src/img/oll/53.png" imgDsc="I 4" alg="(R' F R) (U R U') R2 F' R2 (U' R' U) (R U R')" caseDsc="Not the prettiest but neither the most common."/>
+          <TableRow imgSrc="/src/img/oll/39.png" imgDsc="S" alg="R' F (R U R' U') F' U R" caseDsc="Good algorithm."/>
+          <TableRow imgSrc="/src/img/oll/38.png" imgDsc="S symmetric" alg="(R U R') (F' U' F U) (R U2 R')" caseDsc="Better algorithm than the symmetric."/>
+          <TableRow imgSrc="/src/img/oll/30.png" imgDsc="Long B" alg="(R' U' F) U R U' (R' F' R)" caseDsc="This is the inverse of the last one."/>
+          <TableRow imgSrc="/src/img/oll/31.png" imgDsc="Long P" alg="S (R U R' U') (R' F R f')" caseDsc="For this one we use another rather than the symmetric or the algorithm done with F and R."/>
+          <TableRow imgSrc="/src/img/oll/37.png" imgDsc="W" alg="(R U R' U) (R U' R' U') (R' F R F')" caseDsc="This and the next one start just like sunes but the insertion of the pair is with a sledge."/>
+          <TableRow imgSrc="/src/img/oll/35.png" imgDsc="W symmetric" alg="(R' U' R U') (R' U R U) (R B' R' B)" caseDsc="In orther to fingertick it better, we execute this on B rather than L."/>
+          <TableRow imgSrc="/src/img/oll/28.png" imgDsc="Bad awkward" alg="(R U R' U') (R U' R') (F' U' F) (R U R')" caseDsc="Now we have another awkard. This is the stone on the trail. Just learn it and never look back."/>
+          <TableRow imgSrc="/src/img/oll/29.png" imgDsc="Bad awkward symmetric" alg="(F R' F R2) (U' R' U') (R U R') F2" caseDsc="Better algorithm than the symmetric."/>
+          <TableRow imgSrc="/src/img/oll/44.png" imgDsc="C 1" alg="R' U' (R' F R F') U R" caseDsc="Easy fast algorithm."/>
+          <TableRow imgSrc="/src/img/oll/33.png" imgDsc="C 2" alg="(R U R' U') B' (R' F R) F' B" caseDsc="This one is executed in such a way the last F' and B are executed at the same time."/>
+          <TableRow imgSrc="/src/img/oll/34.png" imgDsc="Bad kite" alg="(R U2 R2') (F R F') (R U2 R')" caseDsc="A weird case, but easy to learn."/>
+          <TableRow imgSrc="/src/img/oll/27.png" imgDsc="Stingray" alg="(r U R' U') M (U R U' R')" caseDsc="All corners. These cases are similar, and if you like them you can try to learn EP if you see all corners are solved."/>
+          <TableRow imgSrc="/src/img/oll/55.png" imgDsc="H" alg="(R U R' U') M' (U R U' r')" caseDsc="The inverse of the previous."/>
+          <TableRow imgSrc="/src/img/oll/20.png" imgDsc="X" alg="M U (R U R' U') M2 (U R U' r')" caseDsc="Easy fast case."/>
+          <TableRow imgSrc="/src/img/oll/19.png" imgDsc="Bad Mickey" alg="M U (R U R' U') M' (R' F R F')" caseDsc="Almost same algorithm as the X."/>
+          <TableRow imgSrc="/src/img/oll/17.png" imgDsc="Diagonal" alg="(R U R' U) (R' F R F') U2 (R' F R F')" caseDsc="The remaining dot cases. It just takes out a pair, inserts a random one and inserts back."/>
+          <TableRow imgSrc="/src/img/oll/1.png" imgDsc="Bad dot" alg="R U2 (R2' F R F') U2 (R' F R F')" caseDsc="Another weird one. Take out the pair, insert another one, insert it back."/>
+        </tbody>
+      </table>
+    </div>
+</Layout>
