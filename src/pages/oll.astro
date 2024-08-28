@@ -4,14 +4,15 @@ import TableRow from "../components/TableRow.astro";
 ---
 
 <Layout title="OLL">
+  <main class="pb-32">
     <h1 class="text-7xl font-bold leading-none text-center mb-4 text-white">OLL</h1>
     <div class="overflow-x-auto">
-      <table class="max-w-3xl mx-auto w-full bg-white border border-gray-300">
+      <table class="max-w-3xl mx-auto w-full bg-white border border-gray-200 rounded-lg shadow-md">
         <thead class="bg-gray-800 text-white">
           <tr>
-            <th class="py-3 px-6 text-left">Case</th>
-            <th class="py-3 px-6 text-left whitespace-nowrap">Algorithm</th>
-            <th class="py-3 px-6 text-left">Explanation</th>
+            <th class="py-3 px-6 text-center font-semibold">Case</th>
+            <th class="py-3 px-6 text-center font-semibold whitespace-nowrap">Algorithm</th>
+            <th class="py-3 px-6 text-center font-semibold">Explanation</th>
           </tr>
         </thead>
         <tbody class="text-gray-800">
@@ -75,4 +76,5 @@ import TableRow from "../components/TableRow.astro";
         </tbody>
       </table>
     </div>
+  </main>
 </Layout>

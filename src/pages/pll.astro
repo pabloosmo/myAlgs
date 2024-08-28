@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro"
+import TableRow from "../components/TableRow.astro";
+---
+
+<Layout title="PLL">
+  <main class="pb-32">
+    <h1 class="text-7xl font-bold leading-none text-center mb-4 text-white">PLL</h1>
+    <div class="overflow-x-auto">
+      <table class="max-w-3xl mx-auto w-full bg-white border border-gray-200 rounded-lg shadow-md">
+        <thead class="bg-gray-800 text-white">
+          <tr>
+            <th class="py-3 px-6 text-center font-semibold">Case</th>
+            <th class="py-3 px-6 text-center font-semibold whitespace-nowrap">Algorithm</th>
+            <th class="py-3 px-6 text-center font-semibold">Explanation</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-800">
+          <TableRow imgSrc="/src/img/pll/Ja.png" imgDsc="Ja" alg="R' U L' U2 R U' R' U2 R L" caseDsc="This case allows to exchange 2 adjacent corners"/>
+          <TableRow imgSrc="/src/img/pll/Ua.png" imgDsc="Ua" alg="M2 U M U2 M' U M2" caseDsc="Permute 3 edges counter-clockwise"/>
+          <TableRow imgSrc="/src/img/pll/Ub.png" imgDsc="Ub" alg="M2 U' M U2 M' U' M2" caseDsc="Permute 3 edges clockwise. Once you learn all PLLs, come back to learn Us from other angles."/>
+          <TableRow imgSrc="/src/img/pll/H.png" imgDsc="H" alg="M2 U' M2 U2 M2 U' M2" caseDsc="Permutes 2-2 opposite edges."/>
+          <TableRow imgSrc="/src/img/pll/Z.png" imgDsc="Z" alg="M2 U' M U2 M' U' M2" caseDsc="Permutes 2-2 ajacent edges."/>
+          <TableRow imgSrc="/src/img/pll/Aa.png" imgDsc="Aa" alg="l' U R' D2 R U' R' D2 R2" caseDsc="3 corner case. Any other orientation can be done faster like megaminx corners."/>
+          <TableRow imgSrc="/src/img/pll/Ab.png" imgDsc="Ab" alg="l' R' D2 R U R' D2 R U' R" caseDsc="3 corners clockwise."/>
+          <TableRow imgSrc="/src/img/pll/E.png" imgDsc="E" alg="x' (R U' R') D (R U R') D' (R U R') D (R U' R') D'" caseDsc="4 corners. This algorithm combines 2 pure conmutators."/>
+          <TableRow imgSrc="/src/img/pll/T.png" imgDsc="T" alg="(R U R' U') R' F R2 (U' R' U' R U R') F'" caseDsc="Basic case for many PLLs which setup to this case."/>
+          <TableRow imgSrc="/src/img/pll/Jb.png" imgDsc="Jb" alg="(R U R') F' (R U R' U') R' F R2 U' R'" caseDsc="This sets up into a T perm."/>
+          <TableRow imgSrc="/src/img/pll/F.png" imgDsc="F" alg="R' U' F' (R U R' U') R' F R2 (U' R' U' R U R') U R" caseDsc="This sets up into a T perm."/>
+          <TableRow imgSrc="/src/img/pll/Y.png" imgDsc="Y" alg="F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')" caseDsc="Inverse T perm."/>
+          <TableRow imgSrc="/src/img/pll/V.png" imgDsc="V" alg="R' U R' U' R D' R' D R' U D' R2 U' R2 D R2" caseDsc="Awful case, just avoid it."/>
+          <TableRow imgSrc="/src/img/pll/Ra.png" imgDsc="Ra" alg="R U' R' U' R U R D R' U' R D' R' U2 R'" caseDsc="I don't like these either"/>
+          <TableRow imgSrc="/src/img/pll/Rb.png" imgDsc="Rb" alg="R' U2 R U2' R' F R U R' U' R' F' R2" caseDsc="Trying to make it better."/>
+          <TableRow imgSrc="/src/img/pll/Ga.png" imgDsc="Ga" alg="R2 U R' U R' U' R U' R2 U' D R' U R D'" caseDsc="The key for G perms is to recognize where the headlights are (corners with the same color)."/>
+          <TableRow imgSrc="/src/img/pll/Gb.png" imgDsc="Gb" alg="R' U' R U D' R2 U R' U R U' R U' R2 D" caseDsc="Bad G"/>
+          <TableRow imgSrc="/src/img/pll/Gc.png" imgDsc="Gc" alg="R2' F2 R U2 R U2' R' F R U R' U' R' F R2" caseDsc="For me this is the best G and the only one we can execute with this algorithm."/>
+          <TableRow imgSrc="/src/img/pll/Gd.png" imgDsc="Gd" alg="R U R' U' D R2 U' R U' R' U R' U R2 D'" caseDsc="Another bad G"/>
+          <TableRow imgSrc="/src/img/pll/Na.png" imgDsc="Na" alg="R U R' U (R U R') F' (R U R' U' R') F R2 (U' R' U2 R U' R')" caseDsc="Very good Nperm, this one sets up into a Jb perm."/>
+          <TableRow imgSrc="/src/img/pll/Nb.png" imgDsc="Nb" alg="r' D' F (r U' r') F' D (r2 U r' U') (r' F r F')" caseDsc="Not so good N perm, but still good."/>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</Layout>

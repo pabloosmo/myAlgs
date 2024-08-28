@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to myAlgs.">
+	<main class="pb-32 mx-auto p-4 w-[800px] max-w-[calc(100%-2rem)] text-white text-[20px] leading-[1.6]">
 		<svg
 			class="astro-a"
 			width="495"
@@ -34,7 +35,7 @@ import Card from '../components/Card.astro';
 		</svg>
 		<h1 class="text-7xl font-bold leading-none text-center mb-4">Welcome to <span class="text-gradient">myAlgs</span></h1>
 		<p class="instructions">
-			This is the page where I compile and share all algorithms I use in speedcubing.
+			This is the page where I compile and share all algorithms I use in speedcubing. This guide is oriented to learn the best algorithms the easiest way by learning them in an specific order, which I recommend. 
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -58,6 +59,7 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+	</main>
 </Layout>
 
 <style>
