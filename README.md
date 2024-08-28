@@ -36,4 +36,56 @@ Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
     cd algoritmos-cubo-rubik
     ```
 
-2. **Instala la
+2. **Instala las dependencias**:
+    Asegúrate de tener [Node.js](https://nodejs.org/) y [pnpm](https://pnpm.io/) instalados.
+    ```bash
+    pnpm install
+    ```
+
+3. **Ejecuta el servidor de desarrollo**:
+    ```bash
+    pnpm dev
+    ```
+
+    Visita `http://localhost:3000` en tu navegador para ver el sitio web en acción.
+
+## Uso
+
+Para agregar o actualizar algoritmos, sigue estos pasos:
+
+1. **Añadir nuevos algoritmos**: Modifica los archivos en `src/pages/algoritmos` para agregar o actualizar algoritmos.
+2. **Actualizar la documentación**: Edita `src/pages/documentacion` para mantener la guía actualizada.
+3. **Ejecutar pruebas**: Asegúrate de que todos los cambios funcionen correctamente ejecutando:
+    ```bash
+    pnpm test
+    ```
+
+## Contribución
+
+Las contribuciones son bienvenidas. Si quieres contribuir al proyecto, sigue estos pasos:
+
+1. **Haz un fork del repositorio**.
+2. **Crea una rama para tu funcionalidad**:
+    ```bash
+    git checkout -b feature/nueva-funcionalidad
+    ```
+3. **Realiza tus cambios** y realiza un commit:
+    ```bash
+    git commit -m "Añadida nueva funcionalidad"
+    ```
+4. **Sube tus cambios** y crea un pull request:
+    ```bash
+    git push origin feature/nueva-funcionalidad
+    ```
+
+### Código de Conducta
+
+Por favor, sigue el [Código de Conducta](./CODE_OF_CONDUCT.md) del proyecto para asegurar un ambiente de colaboración respetuoso.
+
+## Licencia
+
+Este proyecto está licenciado bajo la [MIT License](./LICENSE).
+
+---
+
+¡Gracias por visitar el proyecto **Algoritmos de Cubo de Rubik**! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o enviar un correo a `contacto@tusitio.com`.
