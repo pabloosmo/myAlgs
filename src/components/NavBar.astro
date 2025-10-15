@@ -1,0 +1,22 @@
+---
+// filepath: d:\projects\myAlgs\src\components\NavBar.astro
+const base = '/myAlgs'; // Cambia esto si tu subdirectorio es diferente
+const links = [
+  { href: `${base}/pll`, label: 'PLL' },
+  { href: `${base}/oll`, label: 'OLL' },
+  { href: `${base}/cll`, label: 'CLL' },
+  // Agrega más métodos o páginas aquí
+];
+---
+<nav class="sticky top-0 z-50 bg-gradient-to-r from-indigo-700 to-purple-700 text-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <span class="text-2xl font-extrabold tracking-tight"><a href="/myAlgs">myAlgs</a></span>
+    <ul class="flex gap-6">
+      {links.map(link => (
+        <li>
+          <a href={link.href} class="transition-colors duration-200 hover:text-yellow-300 font-semibold">{link.label}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
