@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro"
+import CaseCard from "../components/CaseCard.astro";
+---
+
+<Layout title="CLL">
+  <main class="pb-32">
+    <h1 class="text-7xl font-bold leading-none text-center mb-4 text-white">CLL</h1>
+    <div class="max-w-6xl mx-auto px-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <CaseCard imgSrc="/src/img/cll/sune1.png" imgDsc="Sune 1" alg="R U R' U R U2 R'" caseDsc="Regular sune"/>
+        <CaseCard imgSrc="/src/img/cll/sune6.png" imgDsc="Sune 2" alg="(R U R' U) (R' F R F') (R U2 R')" caseDsc="U2 setup"/>
+        <CaseCard imgSrc="/src/img/cll/sune2.png" imgDsc="Sune 3" alg="(L' U2 L U2) (L F' L' F)" caseDsc="U2 Extraction"/>
+        <CaseCard imgSrc="/src/img/cll/sune4.png" imgDsc="Sune 4" alg="(R U R' U') (R' F R F') (R U R' U R U2 R')" caseDsc="Sexy + Sledge + Sune"/>
+        <CaseCard imgSrc="/src/img/cll/sune5.png" imgDsc="Sune 5" alg="L F' L' F L' U' L" caseDsc="Righty Nicklass"/>
+        <CaseCard imgSrc="/src/img/cll/sune3.png" imgDsc="Sune 6" alg="(F R' F' R) (U2 R U2 R')" caseDsc="Anti sledge + U2 insertion"/>
+        <CaseCard imgSrc="/src/img/cll/antisune1.png" imgDsc="Anti-Sune 1" alg="L' U' L U' L' U2" caseDsc="Lefty sune"/>
+        <CaseCard imgSrc="/src/img/cll/antisune6.png" imgDsc="Anti-Sune 2" alg="(R' U R U') R2 F R F' R (U R' U' R)" caseDsc="Horrible, try to avoid it in inspection"/>
+        <CaseCard imgSrc="/src/img/cll/antisune4.png" imgDsc="Anti-Sune 3" alg="(R U2 R' U2) (R' F R F')" caseDsc="U2 extraction + sledge"/>
+        <CaseCard imgSrc="/src/img/cll/antisune2.png" imgDsc="Anti-Sune 4" alg="(L' U' L U) (L F' L' F) (L' U' L U' L' U2)" caseDsc="Sexy + Sledge + Sune"/>
+        <CaseCard imgSrc="/src/img/cll/antisune5.png" imgDsc="Anti-Sune 6" alg="R' F R F' R U R'" caseDsc="Lefty Nicklass"/>    
+        <CaseCard imgSrc="/src/img/cll/antisune3.png" imgDsc="Anti-Sune 5" alg="(F' L F L') (U2 L' U2 L)" caseDsc="Anti-sledge + U2 insertion"/>
+        <CaseCard imgSrc="/src/img/cll/tcorta6.png" imgDsc="U 1" alg="F (R U R' U') F'" caseDsc="Short T, F Sexy F'"/>
+        <CaseCard imgSrc="/src/img/cll/tcorta2.png" imgDsc="U 2" alg="z' U2' R' U' R2 (U' R' U' R U' R' U')" caseDsc="Setup + end of a sune"/>
+        <CaseCard imgSrc="/src/img/cll/tcorta1.png" imgDsc="U 3" alg="R2' F2 (R U R') F R2 U2 (R' U' R)" caseDsc="Not the best case"/>
+        <CaseCard imgSrc="/src/img/cll/tcorta4.png" imgDsc="U 4" alg="(F R' F' R) (U' R U' R') (U2 R U' R')" caseDsc="Really fast"/>
+        <CaseCard imgSrc="/src/img/cll/tcorta5.png" imgDsc="U 5" alg="(R U2 R' U) L' U2 (R U' R') U2 L" caseDsc="Fast alg"/>
+        <CaseCard imgSrc="/src/img/cll/tcorta3.png" imgDsc="U 6" alg="(L' U2' L U') R U2 (L U L') U2 R'" caseDsc="Mirror from previous one"/>
+        <CaseCard imgSrc="/src/img/cll/tlarga1.png" imgDsc="T 1" alg="(R' U R) U2 R2 F' (R U' R') F2 R2" caseDsc="Extraction + correction"/>
+        <CaseCard imgSrc="/src/img/cll/tlarga2.png" imgDsc="T 2" alg="(R' U R) U2 R2 (F R F' R)" caseDsc="Very similar to previous case"/>
+        <CaseCard imgSrc="/src/img/cll/tlarga4.png" imgDsc="T 3" alg="(R U R' U) (R' F2 R) U (R' F2 R F')" caseDsc="Changed to this one"/>
+        <CaseCard imgSrc="/src/img/cll/tlarga6.png" imgDsc="T 4" alg="F U' (R U2 R' U') F2 (R U R)'" caseDsc="Nice fast case"/>
+        <CaseCard imgSrc="/src/img/cll/tlarga3.png" imgDsc="T 5" alg="U (L' U' L U) (L F' L' F)" caseDsc="It's better if you execute it from behind"/>
+        <CaseCard imgSrc="/src/img/cll/tlarga5.png" imgDsc="T 6" alg="(R U R' U') (R' F R F')" caseDsc="Easy T OLL"/>
+        <CaseCard imgSrc="/src/img/cll/l2.png" imgDsc="L 1" alg="R (U2 R2) F2 (R U R') F2 R F'" caseDsc="Learn it separating F moves"/>
+        <CaseCard imgSrc="/src/img/cll/l3.png" imgDsc="L 2" alg="(R U2 R') F' (R U2 R') U (R' F2 R)" caseDsc=""/>
+        <CaseCard imgSrc="/src/img/cll/l4.png" imgDsc="L 3" alg="F R' F' R U R U' R'" caseDsc="Inverse of the long T"/>
+        <CaseCard imgSrc="/src/img/cll/l5.png" imgDsc="L 4" alg="F R U' R' U' R U R' F'" caseDsc="Same as the 3x3 OLL"/>
+        <CaseCard imgSrc="/src/img/cll/l1.png" imgDsc="L 5" alg="(R' U R') U2 (R U' R' U) (R U' R2)" caseDsc="Different colors on top, opposite colors with front sticker"/>
+        <CaseCard imgSrc="/src/img/cll/l6.png" imgDsc="L 6" alg="R U2 R2 (F R F' R) U2 R'" caseDsc="Different colors on top, same colors with front sticker"/>
+        <CaseCard imgSrc="/src/img/cll/super5.png" imgDsc="Pi 1" alg="(R U' R' F) (R' F R U) (R' F R)" caseDsc="Fast fun case"/>
+        <CaseCard imgSrc="/src/img/cll/super3.png" imgDsc="Pi 2" alg="F (R2 U' R2 U) (R2 U R2) F'" caseDsc="Good one"/>
+        <CaseCard imgSrc="/src/img/cll/super1.png" imgDsc="Pi 3" alg="F (R U R' U') (R U R' U') F'" caseDsc="F + double sexy + F'"/>
+        <CaseCard imgSrc="/src/img/cll/super6.png" imgDsc="Pi 4" alg="(R' U' R') (F R F' R U') (R' U2 R)" caseDsc=""/>
+        <CaseCard imgSrc="/src/img/cll/super4.png" imgDsc="Pi 6" alg="(R U2 R') (U' R U R') U2 (R' F R F')" caseDsc="Fast case"/>
+        <CaseCard imgSrc="/src/img/cll/super2.png" imgDsc="Pi 5" alg="U2 (L U2 L') (U L' U' L) U2 (R U' L' U)" caseDsc="Mirror from previous"/>
+        <CaseCard imgSrc="/src/img/cll/h1.png" imgDsc="H 1" alg="R2 U2 R' U2 R2" caseDsc="No regrip needed"/>
+        <CaseCard imgSrc="/src/img/cll/h4.png" imgDsc="H 2" alg="F2 R' F2 R2 U2 R' F2" caseDsc="Fast one"/>
+        <CaseCard imgSrc="/src/img/cll/h2.png" imgDsc="H 3" alg="F (R2 U' R2 U' R2 U R2) F'" caseDsc="Vertical bar, reverse from pi case"/>
+        <CaseCard imgSrc="/src/img/cll/h3.png" imgDsc="H 4" alg="R U R' U R U L' U R' U' L" caseDsc="Horizontal bar"/>
+      </div>
+    </div>
+  </main>
+</Layout>
